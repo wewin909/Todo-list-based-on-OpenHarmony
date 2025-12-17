@@ -1,0 +1,49 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:/Users/wewin909/.ohos/config/openharmony/default_app_stPx-hs97UlIGLU5OmFyOYYAB5PVzyuCiagnOSVwSgc=.cer",
+          "storePassword": "0000001A22A549CFA6DD9D6E21A74138D9A30720143852C8EC75A7C336D348DC230B0A605AEE1AB463B7",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A80DC5F9B96866517CD149961A929FA907DE6A18F507E4BB8016F3924629DC9456702A537013C",
+          "profile": "C:/Users/wewin909/.ohos/config/openharmony/default_app_stPx-hs97UlIGLU5OmFyOYYAB5PVzyuCiagnOSVwSgc=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/Users/wewin909/.ohos/config/openharmony/default_app_stPx-hs97UlIGLU5OmFyOYYAB5PVzyuCiagnOSVwSgc=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 12,
+        "compatibleSdkVersion": 12,
+        "runtimeOS": "OpenHarmony"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
